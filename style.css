@@ -252,12 +252,12 @@ main {
 
 @media (max-width: 900px) {
   .months {
-    max-height: 35vh;
+    /* max-height: 35vh;
     position: fixed;
     top: auto;
     bottom: -18%;
-    z-index: 3;
-    /* display: none; */
+    z-index: 3; */
+    display: none;
   }
   main {
     display: block;
