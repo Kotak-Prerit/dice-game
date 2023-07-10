@@ -54,7 +54,7 @@ btnRoll.addEventListener("click", function () {
 
     // 2. Display dice
     diceEl.classList.remove("hidden");
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `images/dice-${dice}.png`;
 
     // 3. Check for rolled 1
     if (dice !== 1) {
@@ -90,7 +90,6 @@ btnSwitch.addEventListener("click", function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove("player--active");
-      document.querySelector(".name").textContent = "Winner 🎉";
     } else {
       // Switch to the next player
       switchPlayer();
