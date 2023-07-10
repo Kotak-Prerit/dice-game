@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice-Game</title>
+  </head>
+  <body>
+    <div class="info">
+      <svg
+        class="information"
+        xmlns="http://www.w3.org/2000/svg"
+        height="2.5rem"
+        viewBox="0 0 512 512"
+        fill="#000"
+      >
+        <path
+          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+        />
+      </svg>
+    </div>
+
+    <div class="instructionPage hidden">
+      <div class="nav">
+        <div class="close">
+          <svg width="15" viewBox="0 0 375 374.999991" height="15" fill="red">
+            <path
+              stroke-linecap="round"
+              transform="matrix(0.407143, 0.407143, -0.406907, 0.406907, 74.442794, 70.377622)"
+              fill="none"
+              stroke-linejoin="miter"
+              d="M 5.003301 5.000014 L 560.686058 5.000014 "
+              stroke="#ffffff"
+              stroke-width="50"
+              stroke-opacity="1"
+              stroke-miterlimit="4"
+            />
+            <path
+              stroke-linecap="round"
+              transform="matrix(-0.407143, 0.407143, -0.406907, -0.406907, 304.61846, 74.446687)"
+              fill="none"
+              stroke-linejoin="miter"
+              d="M 5.003303 4.999984 L 560.68606 4.999984 "
+              stroke="#ffffff"
+              stroke-width="50"
+              stroke-opacity="1"
+              stroke-miterlimit="4"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="instructions">
+        <h1>How to Play 🤔</h1>
+        <p>
+          <span class="bulletPoints">1.</span> Click on
+          <strong>Roll dice</strong> button to roll the dice.
+        </p>
+        <p>
+          <span class="bulletPoints">2.</span> Press
+          <strong>Switch button</strong> to switch the Player
+        </p>
+        <p>
+          <span class="bulletPoints">3.</span>
+          <mark
+            >If a player roll <strong>1</strong>. His/Her chance will be
+            skipped.</mark
+          >
+        </p>
+        <p>
+          <span class="bulletPoints">4.</span> First player to get a
+          <strong>Total Score of 30</strong> or more will Win the game
+        </p>
+        <p>
+          <span class="bulletPoints">5.</span> You can always start a New Game
+          by clicking the New Game Button.
+        </p>
+
+        <hr />
+      </div>
+    </div>
+
+    <svg viewBox="0 0 21 78" class="months">
+      <path
+        fill="#000"
+        d="m3 3 0 5 1 0 0-2 1 0 0-3zm4 0v5h1v-5zm3 1v1h1v-1zm0 2v2h1v-2zm5-3 1 2v-2zm0 3v2h1zm-10 4v1h1v1h-1v2h3v-4zm5 0v1h1v1h-1v1h3v-3zm5 0v1h1v-1zm0 2v1h1v-1zm2-.5 1 1.5v-3zm-12.5 3.5 1 1 1-1zm0 2v3h2v-3l-1 1zm5.5-1v1h1v-1zm0 2v2h1v-2zm5-2v1h1v-1zm0 2v2h1zm2 0 1 2v-2zm-12 4v1h1v-1zm0 2v2h1v-2zm5-2v1h1v-1zm0 2v2h3v-2zm0 0v2h3v-2zm5-2v1h1v-1zm0 2v2h1zm2 0 1 2v-2zm-12.5 3 1 1 1-1zm0 2v3h2v-3l-1 1zm5.5-1v1h1v-1zm0 0v1h1v-1zm0 2v2h1v-2zm3-2v4h1.75v-2zm2-1v1l.5.5.5-.5v-1zm1.25 3v2h1.75v-4zm-13.25 3v5h1v-2h1v-3zm4 0v5h1v-5zm3 0v3h1v-3zm0 0v3h1v-3zm5 0 1 2v-2zm0 3v2h1zm-12 3v5h1v-2h1v-3zm4 0v5h1v-5zm3 0v3h1v-3zm5 0v3h3v-3zm-10 7v1h1v-1zm0 2v2h1v-2zm5-3v3h1v-3zm4.5 1v3h2v-1h-1v-1h2v-1zm-9.5 6v1h3v-1zm-2 2v1h3v-1zm7-2v1h1v1h-1v1h3v-3zm5 0v1h1v-1zm0 2v2h3v-2zm-10 4.5v2h1v-2zm5 0v2h3v-2zm3 0v4h1.5v-4zm3.5 0v4h1.5v-4zm-11.5 4.5 1 2v-2zm0 3v2h1zm5-2v3h1v-3zm3 2v2h2zm2-3v2.5l.5.5.5-.5v-2.5zm1 5h2v-2zm-11 3v1h1v-1zm1-2 2 2v-2zm0 5h2v-2zm4-4v1h1v1h-1v1h3v-3zm5 .5v2h3v-2z"
+      />
+      <g class="decoder" transform="translate(0 66)" stroke-width="1">
+        <rect
+          x="3"
+          y="2.5"
+          height="6"
+          width="15"
+          fill="none"
+          stroke="#000"
+          stroke-width="1.1"
+        />
+        <rect x="3" y="2.5" height="6" width="5" fill="none" stroke="#000" />
+        <rect x="8" y="2.5" height="6" width="5" fill="none" stroke="#000" />
+        <rect x="13" y="2.5" height="6" width="5" fill="none" stroke="#000" />
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          values="0 0; 0 0; 0 6; 0 6; 0 12; 0 12; 0 18; 0 18; 0 24; 0 24; 0 30; 0 30; 0 36; 0 36; 0 42; 0 42; 0 48; 0 48; 0 54; 0 54; 0 60; 0 60; 0 66; 0 66"
+          keyTimes="0; 0.083; 0.093; 0.166; 0.176; 0.25; 0.26; 0.33; 0.34; 0.416; 0.426; 0.5; 0.51; 0.583; 0.593; 0.666; 0.676; 0.75; 0.76; 0.833; 0.843; 0.916; 0.926; 1"
+          dur="10s"
+          begin="0s"
+          repeatCount="indefinite"
+        />
+      </g>
+    </svg>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="final-score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="final-score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--switch">📥 Switch</button>
+    </main>
+    <footer>
+      <p class="sourceCode">source code :</p>
+      <a class="link" href="https://github.com/Kotak-Prerit/dice-game"
+        >Github</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
